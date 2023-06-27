@@ -1,0 +1,253 @@
+
+body {
+	padding: 2rem;
+}
+
+h1 {
+	font-size: 40px;
+	font-family: 'Campton Bold';
+	line-height: normal;
+}
+
+p {
+	font-size: 1rem;
+	line-height: normal;
+}
+
+p.p-intro {
+	margin: 0 0 2rem;
+}
+
+#bitly-outer {
+	display: flex;
+}
+
+#bitly-form {
+	width: 50%;
+	box-sizing: border-box;
+}
+
+#bitly-results {
+	width: 50%;
+	padding-left: 2rem;
+}
+
+
+
+.input-row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0.5rem;
+	align-items: center;
+}
+div.input-row:first-of-type {
+	padding-top: 0;
+}
+#row-domain,
+#row-sources {
+	padding-left: calc(100px + 2rem);;
+}
+#row-domain label,
+#row-sources label {
+	flex-grow: 1;
+	text-align: left;
+}
+
+.input-row h3 {
+	width: 100%;
+	font-size: 1rem;
+}
+
+.input-row label {
+	flex-grow: 0;
+	margin-right: 1rem;
+	font-size: 1rem;
+	font-family: "Akkurat Pro Bold", "Arial Black", sans-serif;
+	text-align: right;
+	width: 33%;
+	margin-bottom: 0.5rem;
+}
+
+.input-row input {
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+.input-row.input-row-optional {
+	background: #f0f0f0;
+}
+
+p.utm-note {
+	width: 100%;
+	font-size: .8rem;
+	line-height: normal;
+	margin: 0.5rem 0 0;
+}
+
+code {
+	   padding: 2px 4px;
+    font-size: 85%;
+    color: #d44950;
+    background-color: #f7f7f9;
+    border-radius: .2rem;
+}
+
+input.btn {
+	margin: 1rem 0;
+}
+
+input[type="text"] {
+	box-sizing: border-box;
+	padding: 0.5rem;
+	font-size: 1.5rem;
+	line-height: normal;
+	border: 1px solid #eee;
+}
+input.input-error[type="text"] {
+	border: 2px solid red;
+}
+
+#utm-submit {
+	margin-left: 120px;
+	width: calc(100% - 120px);
+	margin-bottom: 2rem;
+}
+#utm-submit:hover {
+	background: #401f68;
+}
+
+.result-row .fa {
+	width: 20px;
+	color: #666;
+}
+
+.result-row .fa.fa-twitter {
+	color: #00aced;
+}
+
+.result-row .fa.fa-facebook {
+	color: #3b5998;
+}
+.result-row .fa.fa-instagram {
+	color: #cd486b;
+}
+.result-row .fab.fa-weixin {
+    color: #7bb32e;
+}
+.result-row .fab.fa-whatsapp {
+    color: #4fce5d;
+}
+.result-row .fab.fa-line {
+    color: #00c300;
+}
+
+.result-row {
+	display: flex;
+	font-size: 1rem;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	line-height: 1;
+	border-bottom: 1px solid #eee;
+	padding: 1rem 0;
+}
+
+.result-row:first-child {
+	padding-top: 0;
+}
+.result-row:last-child {
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+.result-label {
+	width: 120px;
+	padding-right: 1rem;
+	font-family: "Akkurat Pro Bold", "Arial Black", sans-serif;
+	font-size: 1rem;
+	line-height: normal;
+}
+
+.result-short {
+	font-family: "Akkurat Pro Bold", "Arial Black", sans-serif;
+	font-size: 1.5rem;
+	line-height: 1;
+	width: calc(100% - 120px);
+}
+.result-short a {
+	text-decoration: none;
+	color: #4e2a84;
+}
+
+.result-long {
+	font-size: .8rem;
+	color: #999;
+	font-family: "Akkurat Pro Book", "Arial", sans-serif;
+	margin-top: 0.5rem;
+}
+
+.btn-copy {
+	background: none;
+	border-radius: .2rem;
+	border: 1px solid #f0f0f0;
+	color: #999;
+	font-size: 0.8rem;
+	left: 20px;
+	padding: 2px 4px;
+	position: relative;
+	text-transform: uppercase;
+	top: 0.25rem;
+}
+.btn-copy:hover {
+	background: #4e2a84;
+	color: white;
+	border: 1px solid #4e2a84;
+	cursor: pointer;
+}
+
+@media (max-width: 800px) {
+	body {
+		padding: 1rem 1rem 2rem;
+	}
+	#bitly-outer {
+		display: block;
+	}
+	#bitly-form,
+	#bitly-results {
+		width: 100%;
+		padding: 0;
+	}
+
+	#bitly-form {
+		margin-bottom: 2rem;
+	}
+
+	#utm-submit {
+		margin-left: 0;
+		width: 100%;
+	}
+	.result-row {
+		display: block;
+	}
+	.result-label {
+		width: 100%;
+		margin-bottom: 0.5rem;
+	}
+	.result-short {
+		padding-left: 20px;
+	}
+	.btn-copy {
+		position: static;
+		margin-left: 0.5rem;
+	}
+
+}
+
+@media (max-width: 800px) {
+	body {
+		padding: 0.5rem 0.5rem 2rem;
+	}
+	.result-short {
+		font-size: 1rem;
+	}
+}
+
